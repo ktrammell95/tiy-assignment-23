@@ -134,49 +134,48 @@ var TrackCollectionView = Backbone.View.extend({
 
 });
 
-// var NavView = Backbone.View.extend({
+var NavView = Backbone.View.extend({
 
-//   tagName: "nav",
+  tagName: "nav",
 
-//   template: JST["nav"],
+  template: JST["nav"],
 
-//   events: {
-//     "click a" : "onLinkClick"
-//   },
+  events: {
+    "click a" : "onLinkClick"
+  },
 
-//   render: function() {
-//     this.$el.html( this.template() );
-//     return this;
-//   },
+  render: function() {
+    this.$el.html( this.template() );
+    return this;
+  },
 
-//   onLinkClick: function(e) {
-//     e.preventDefault();
-//     var name = $(e.currentTarget).data("name");
-//     var href = $(e.currentTarget).attr("href");
-//     this.trigger("link:click", {
-//       name: name,
-//       href: href
-//     });
-//   }
+  onLinkClick: function(e) {
+    e.preventDefault();
+    var name = $(e.currentTarget).data("name");
+    var href = $(e.currentTarget).attr("href");
+    this.trigger("link:click", {
+      name: name,
+      href: href
+    });
+  }
 
-// });
+});
 
-// var GenreView = Backbone.View.extend({
+var GenreView = Backbone.View.extend({
 
-//   tagName: "ul",
+  tagName: "ul",
 
-//   className: "track-list",
+  className: "genres",
 
-//   template: JST["genre"],
+  template: JST["genre"],
 
-//   render: function() {
-//     this.$el.html( this.template() );
-//     $tbody = this.$("aside");
-//     this.collection.each(function(model){
-//       var view = new TrackView({model: model});
-//       $aside.append(view.render().el);
-//     });
-//     return this;
-//   }
+  initialize: function() {
+    this.render();
+  },
 
-// });
+  render: function() {
+    this.$el.html( this.template() );
+    return this;
+  }
+
+});
