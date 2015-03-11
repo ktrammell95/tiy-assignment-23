@@ -2,9 +2,9 @@
   "name": "soundcloud-pre",
   "version": "0.0.0",
   "authors": [
-    "JD Isaacks <jd@jisaacks.com>"
+    "Katherine Trammell <ktrammell@gmail.com>"
   ],
-  "license": "MIT",
+  "license": "ISC",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -22,5 +22,8 @@
   "devDependencies": {
     "mocha": "~2.2.1",
     "chai": "~2.1.1"
-  }
+  },
+  "homepage": "https://github.com/ktrammell95/tiy-assignment-23",
+  "description": "backbone.router soundCloud",
+  "private": true
 }

@@ -1,12 +1,11 @@
 {
   "name": "soundcloud-pre",
   "version": "0.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Katherine Trammell",
   "license": "ISC",
   "devDependencies": {
     "underscore": "~1.8.2",
@@ -17,5 +16,17 @@
     "gulp-wrap": "~0.11.0",
     "gulp-less": "~3.0.1",
     "gulp-concat": "~2.5.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ktrammell95/tiy-assignment-23.git"
+  },
+  "keywords": [
+    "backbone.router",
+    "soundcloud"
+  ],
+  "bugs": {
+    "url": "https://github.com/ktrammell95/tiy-assignment-23/issues"
+  },
+  "homepage": "https://github.com/ktrammell95/tiy-assignment-23"
 }
