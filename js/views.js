@@ -143,7 +143,7 @@ var NavView = Backbone.View.extend({
   events: {
     "click a" : "onLinkClick"
   },
-  
+
   initialize: function() {
     this.render();
   },
@@ -180,6 +180,16 @@ var GenreView = Backbone.View.extend({
   render: function() {
     this.$el.html( this.template() );
     return this;
+  }
+  
+  onLinkClick: function(e) {
+    e.preventDefault();
+    var name = $(e.currentTarget).data("name");
+    var href = $(e.currentTarget).attr("href");
+    this.trigger("link:click", {
+      name: name,
+      href: href
+    });
   }
 
 });
