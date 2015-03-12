@@ -1,6 +1,6 @@
 this["JST"] = this["JST"] || {};
 this["JST"]["genre"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    return "  <li><a data-name=\"pop\" href=\"/genre/pop\" alt=\"pop\">Pop</li>\n  <li><a data-name=\"rock\" href=\"/genre/rock\" alt=\"rock\">Rock</li>\n  <li><a data-name=\"folk\" href=\"/genre/folk\" alt=\"folk\">Folk</li>\n  <li><a data-name=\"rap\" href=\"/genre/rap\" alt=\"rap\">Rap</li>\n  <li><a data-name=\"country\" href=\"/genre/country\" alt=\"country\">Country</li>\n  <li><a data-name=\"80s\" href=\"/genre/80s\" alt=\"80's\">80s</li>\n \n\n";
+    return "  <li><a data-genre=\"pop\" href=\"\" alt=\"pop\">Pop</li>\n  <li><a data-genre=\"rock\" href=\"#\" alt=\"rock\">Rock</li>\n  <li><a data-genre=\"folk\" href=\"#\" alt=\"folk\">Folk</li>\n  <li><a data-genre=\"rap\" href=\"#\" alt=\"rap\">Rap</li>\n  <li><a data-genre=\"country\" href=\"#\" alt=\"country\">Country</li>\n  <li><a data-genre=\"80s\" href=\"#\" alt=\"80's\">80s</li>\n \n\n";
 },"useData":true});
 this["JST"] = this["JST"] || {};
 this["JST"]["nav"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {

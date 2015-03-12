@@ -167,6 +167,10 @@ var NavView = Backbone.View.extend({
 
 var GenreView = Backbone.View.extend({
 
+  events: {
+    "click a" :"onLinkClick"
+  },
+
   tagName: "ul",
 
   className: "genres",
@@ -184,12 +188,9 @@ var GenreView = Backbone.View.extend({
 
   onLinkClick: function(e) {
     e.preventDefault();
-    var name = $(e.currentTarget).data("name");
-    var href = $(e.currentTarget).attr("href");
-    this.trigger("link:click", {
-      name: name,
-      href: href
-    });
+    var genre = $(e.currentTarget).data("genre");
+    // var href = $(e.currentTarget).attr("href");
+    this.trigger("link:click", genre);
   }
 
 });

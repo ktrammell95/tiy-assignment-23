@@ -18,25 +18,11 @@ var Router = Backbone.Router.extend({
     $("body").append(this.tracksView.el);
     $("aside").append(this.genreView.el);
     $("header").append(this.navView.el);
-  },
 
-  initialSetup: function() {
-    this.listenTo(this.navView, "link:click", function(options){
-      switch(options.name) {
-        case "genre":
-          this.showProducts();
-        break;
-        // case "search":
-        //   this.showSearch();
-        // break;
-        default:
-          this.showHome();
-        break;
-      }
-      this.navigate(options.href);
+  this.listenTo(this.genreView, "link:click", function(genre){
+      this.loadGenre(genre);
+      this.navigate("tracks/" + genre);
     });
-
-    this.$header = this.appView.$("header");
 
   },
 
