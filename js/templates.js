@@ -1,36 +1,10 @@
 this["JST"] = this["JST"] || {};
 this["JST"]["genre"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
-
-  return "  <li>\n    <input type=\"checkbox\" value=\"None\" id=\"check-"
-    + alias3(((helper = (helper = helpers.genre || (depth0 != null ? depth0.genre : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"genre","hash":{},"data":data}) : helper)))
-    + "\" class=\"genre-btn\" name=\""
-    + alias3(((helper = (helper = helpers.genre || (depth0 != null ? depth0.genre : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"genre","hash":{},"data":data}) : helper)))
-    + "\" / >\n    <label for=\"check-"
-    + alias3(((helper = (helper = helpers.genre || (depth0 != null ? depth0.genre : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"genre","hash":{},"data":data}) : helper)))
-    + "\"></label><p>Pop</p>\n  </li>\n   <li>\n    <input type=\"checkbox\" value=\"None\" id=\"check-"
-    + alias3(((helper = (helper = helpers.genre || (depth0 != null ? depth0.genre : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"genre","hash":{},"data":data}) : helper)))
-    + "\" class=\"genre-btn\" name=\""
-    + alias3(((helper = (helper = helpers.genre || (depth0 != null ? depth0.genre : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"genre","hash":{},"data":data}) : helper)))
-    + "\" / >\n    <label for=\"check-"
-    + alias3(((helper = (helper = helpers.genre || (depth0 != null ? depth0.genre : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"genre","hash":{},"data":data}) : helper)))
-    + "\"></label><p>Rock</p>\n  </li>\n   <li>\n    <input type=\"checkbox\" value=\"None\" id=\"check-"
-    + alias3(((helper = (helper = helpers.genre || (depth0 != null ? depth0.genre : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"genre","hash":{},"data":data}) : helper)))
-    + "\" class=\"genre-btn\" name=\""
-    + alias3(((helper = (helper = helpers.genre || (depth0 != null ? depth0.genre : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"genre","hash":{},"data":data}) : helper)))
-    + "\" / >\n    <label for=\"check-"
-    + alias3(((helper = (helper = helpers.genre || (depth0 != null ? depth0.genre : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"genre","hash":{},"data":data}) : helper)))
-    + "\"></label><p>Country</p>\n  </li>\n   <li>\n    <input type=\"checkbox\" value=\"None\" id=\"check-"
-    + alias3(((helper = (helper = helpers.genre || (depth0 != null ? depth0.genre : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"genre","hash":{},"data":data}) : helper)))
-    + "\" class=\"genre-btn\" name=\""
-    + alias3(((helper = (helper = helpers.genre || (depth0 != null ? depth0.genre : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"genre","hash":{},"data":data}) : helper)))
-    + "\" / >\n    <label for=\"check-"
-    + alias3(((helper = (helper = helpers.genre || (depth0 != null ? depth0.genre : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"genre","hash":{},"data":data}) : helper)))
-    + "\"></label><p>Folk</p>\n  </li>\n \n\n";
+    return "  <li><a data-name=\"pop\" href=\"#\" alt=\"pop\">Pop</li>\n  <li><a data-name=\"rock\" href=\"#\" alt=\"rock\">Rock</li>\n  <li><a data-name=\"folk\" href=\"#\" alt=\"folk\">Folk</li>\n  <li><a data-name=\"rap\" href=\"#\" alt=\"rap\">Rap</li>\n  <li><a data-name=\"country\" href=\"#\" alt=\"country\">Country</li>\n  <li><a data-name=\"80s\" href=\"#\" alt=\"80's\">80s</li>\n \n\n";
 },"useData":true});
 this["JST"] = this["JST"] || {};
 this["JST"]["nav"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    return "";
+    return "<a data-name=\"genres\" href=\"/genres\">Genres</a>\n<a data-name=\"search\" href=\"/search\">Search</a>\n";
 },"useData":true});
 this["JST"] = this["JST"] || {};
 this["JST"]["track"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
