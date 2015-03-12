@@ -4,22 +4,54 @@ body {
 }
 header {
   width: 960px;
-  background-color: red;
+  background-color: grey;
+  text-align: center;
+  height: 100px;
   margin: auto;
 }
-header nav a {
+header h1 {
+  line-height: 60px;
+  margin: 0;
+}
+header nav {
+  height: 50px;
+}
+header nav .nav-btn1 {
+  margin-left: 370px;
+}
+header nav .nav-btn1,
+header nav .nav-btn2 {
+  float: left;
+  margin-right: 20px;
+  background-color: #d0d0d0;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  color: black;
+}
+header nav .nav-btn1 a,
+header nav .nav-btn2 a {
   text-decoration: none;
 }
 .main-container {
   width: 960px;
-  background-color: blue;
   margin: auto;
 }
 .main-container aside {
   width: 200px;
-  background-color: green;
+  background-color: #57c6f2;
   float: left;
   color: black;
+}
+.main-container aside h2 {
+  text-align: center;
+}
+.main-container aside .genres {
+  list-style: none;
+}
+.main-container aside .genres li a {
+  color: white;
+  text-decoration: none;
 }
 .track-list {
   border-collapse: collapse;

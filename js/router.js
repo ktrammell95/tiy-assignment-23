@@ -36,7 +36,7 @@ var Router = Backbone.Router.extend({
       this.navigate(options.href);
     });
 
-    this.$main = this.appView.$(".main");
+    this.$header = this.appView.$("header");
 
   },
 

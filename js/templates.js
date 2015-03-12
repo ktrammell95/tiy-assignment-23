@@ -1,10 +1,10 @@
 this["JST"] = this["JST"] || {};
 this["JST"]["genre"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    return "  <li><a data-name=\"pop\" href=\"#\" alt=\"pop\">Pop</li>\n  <li><a data-name=\"rock\" href=\"#\" alt=\"rock\">Rock</li>\n  <li><a data-name=\"folk\" href=\"#\" alt=\"folk\">Folk</li>\n  <li><a data-name=\"rap\" href=\"#\" alt=\"rap\">Rap</li>\n  <li><a data-name=\"country\" href=\"#\" alt=\"country\">Country</li>\n  <li><a data-name=\"80s\" href=\"#\" alt=\"80's\">80s</li>\n \n\n";
+    return "  <li><a data-name=\"pop\" href=\"/#genre/pop\" alt=\"pop\">Pop</li>\n  <li><a data-name=\"rock\" href=\"/#genre/rock\" alt=\"rock\">Rock</li>\n  <li><a data-name=\"folk\" href=\"/#genre/folk\" alt=\"folk\">Folk</li>\n  <li><a data-name=\"rap\" href=\"/#genre/rap\" alt=\"rap\">Rap</li>\n  <li><a data-name=\"country\" href=\"/#genre/country\" alt=\"country\">Country</li>\n  <li><a data-name=\"80s\" href=\"/#genre/80s\" alt=\"80's\">80s</li>\n \n\n";
 },"useData":true});
 this["JST"] = this["JST"] || {};
 this["JST"]["nav"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    return "<a data-name=\"genres\" href=\"/genres\">Genres</a>\n<a data-name=\"search\" href=\"/search\">Search</a>\n";
+    return "<div class=\"nav-btn1\">\n  <a data-name=\"genres\" href=\"/genres\">Genres</a>\n</div>\n<div class=\"nav-btn2\">\n  <a data-name=\"search\" href=\"/search\">Search</a>\n</div>\n";
 },"useData":true});
 this["JST"] = this["JST"] || {};
 this["JST"]["track"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {

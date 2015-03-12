@@ -5,26 +5,54 @@ body {
 
 header {
   width: 960px;
-  background-color: red;
+  background-color: grey;
+  text-align: center;
+  height: 100px;
   margin:auto;
+  h1{
+    line-height: 60px;
+    margin: 0;
+  }
   nav {
-    a {
+    height: 50px;
+    .nav-btn1 {
+        margin-left: 370px;
+      }
+    .nav-btn1, .nav-btn2 {
+      float: left;
+      margin-right: 20px;
+      background-color: #d0d0d0;
+      width: 100px;
+      height: 30px;
+      line-height: 30px;
+      color: black;
+      a {
       text-decoration: none;
+      }
     }
   }
 }
 
 .main-container{
   width: 960px;
-  background-color: blue;
+  // background-color: blue;
   margin: auto;
   aside{
     width: 200px;
-    background-color: green;
+    background-color: #57c6f2;
     float: left;
     color: black;
-    .genres{
-      
+    h2{
+      text-align: center;
+    }
+    .genres {
+          list-style: none;
+      li {
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
     }
   }
 }

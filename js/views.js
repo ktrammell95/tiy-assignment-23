@@ -143,6 +143,10 @@ var NavView = Backbone.View.extend({
   events: {
     "click a" : "onLinkClick"
   },
+  
+  initialize: function() {
+    this.render();
+  },
 
   render: function() {
     this.$el.html( this.template() );
