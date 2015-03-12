@@ -180,8 +180,8 @@ var GenreView = Backbone.View.extend({
   render: function() {
     this.$el.html( this.template() );
     return this;
-  }
-  
+  },
+
   onLinkClick: function(e) {
     e.preventDefault();
     var name = $(e.currentTarget).data("name");
